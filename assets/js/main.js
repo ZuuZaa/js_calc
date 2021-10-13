@@ -90,6 +90,7 @@ window.onload = function () {
           board.innerHTML = finalResult;
           firstNumber = false;
           finalResult = "0";
+          screenNumber = "";
         }else{
           board.innerHTML = "Enter Digit or Operator"
         }
