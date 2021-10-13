@@ -34,10 +34,6 @@ function calculate(a, b, operator) {
   }
   return a;
 }
-function option(option, screenNumber) {
-  if (option == "C") {
-  }
-}
 
 window.onload = function () {
   var numbers = document.querySelectorAll(".number");
@@ -65,7 +61,6 @@ window.onload = function () {
   operators.forEach((opr) => {
     opr.addEventListener("click", function (e) {
       operator = e.target.innerHTML;
-      console.log("operator", operator);
       operatorState = true;
       if (!firstNumber) {
         firstNumber = true;
@@ -84,26 +79,12 @@ window.onload = function () {
   options.forEach((opt) => {
     opt.addEventListener("click", function (e) {
       option = e.target.innerHTML;
-      console.log(option);
-      // if (option == "C") {
-      //   console.log('if C')
-      //   if (screenNumber.length <= 1) {
-      //     console.log(screenNumber.length)
-      //     screenNumber = "0";
-      //   } else{
-      //     console.log(typeof screenNumber);
-      //     screenNumber.substring(0, screenNumber.length - 1);
-      //   }
-      //   board.innerHTML = screenNumber;
-
-      // }
       if (option == "AC"){
         finalResult = "0";
         firstNumber = false;
         board.innerHTML = finalResult;
       }
       if (option == "="){
-        console.log("equal");
         if (screenNumber){
           finalResult = calculate(finalResult, screenNumber, operator);
           board.innerHTML = finalResult;
