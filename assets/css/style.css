@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: smokewhite;
+}
+nav {
+    color: rgb(82, 38, 118);
+    box-shadow: 0 1px 8px rgb(75, 75, 75);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+.rounded {
+    border-radius: 0.5rem;
+}
+button {
+    background-color: rgb(82, 38, 118);
+    color: rgb(186, 167, 187);
+    font-size: 1.5rem;
+}
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid:repeat(7, 4rem)/repeat(4, 6rem);
+    gap: 0.8rem;
+}
+.board {
+    background-color: rgb(186, 167, 187);
+    color: rgb(82, 38, 118);
+    border-radius: 0.5rem;
+    grid-column: 1 /5;
+    font-size: 1.5rem;
+}
+.c, .ac, .equal {
+    background-color: rgb(97, 97, 97);
+    color: rgb(186, 167, 187);
+}
+.c {
+    grid-column: 1/3;
+}
+.ac {
+    grid-column: 3/5;
+}
+.zero {
+    grid-column: 1/3;
+}
+.equal {
+    grid-column: 1/5;
+}
