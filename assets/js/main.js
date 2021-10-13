@@ -81,6 +81,7 @@ window.onload = function () {
       option = e.target.innerHTML;
       if (option == "AC"){
         finalResult = "0";
+        screenNumber = "";
         firstNumber = false;
         board.innerHTML = finalResult;
       }
