@@ -43,7 +43,6 @@ window.onload = function () {
 
   numbers.forEach((num) => {
     num.addEventListener("click", function (e) {
-      console.log("num cliked");
       if (!firstNumber) {
         finalResult = getNumber(finalResult, e.target.innerHTML, operatorState);
         board.innerHTML = finalResult;
